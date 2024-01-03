@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+code {
+	@apply text-primary-400 bg-gray-100 rounded-sm px-1 py-0.5  dark:bg-gray-800;
+}
+
+code:before {
+	content: 'none';
+}
+
+code:after {
+	content: 'none';
+}
+
+a {
+	@apply text-primary-500 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-600;
+}
+
+h1,
+h2 {
+	@apply font-bold tracking-tight text-gray-900 dark:text-gray-100;
+}
+h3 {
+	@apply font-semibold tracking-tight text-gray-900 dark:text-gray-100;
+}
+
+h4,
+h5,
+h6,
+p,
+li {
+	@apply text-gray-900 dark:text-gray-100;
+}
+
+hr {
+	@apply border border-gray-500 dark:border-gray-700;
+}
+
+ol li:before {
+	@apply font-bold text-gray-500 dark:text-gray-100;
+}
+
+ul li:before {
+	@apply bg-gray-500 dark:bg-gray-100;
+}
+
+ul li > :last-child,
+ul li > :first-child {
+	@apply m-0;
+}
+
+strong {
+	@apply text-gray-600 dark:text-gray-100;
+}
+
+thead {
+	@apply dark:text-gray-100;
+}
+
+blockquote {
+	@apply text-gray-900 border-l border-gray-200 dark:border-gray-700 dark:text-gray-100;
+}
+
+/* hamburger menu button: https://css-tricks.com/line-animated-hamburger-menu/ */
+.line {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 6;
+	transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
+		stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+	stroke-dasharray: 60 207;
+}
+.line2 {
+	stroke-dasharray: 60 60;
+}
+.line3 {
+	stroke-dasharray: 60 207;
+}
+.opened.line1 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+}
+.opened.line2 {
+	stroke-dasharray: 1 60;
+	stroke-dashoffset: -30;
+}
+.opened.line3 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+}
+
+/* https://jarv.is/notes/css-waving-hand-emoji/ */
+.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.667s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block;
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/* For Chrome, Safari, and newer Edge */
+::-webkit-scrollbar {
+	width: 12px; /* Adjust the width to make it thin */
+}
+
+/* For Chrome and newer Edge */
+::-webkit-scrollbar-thumb {
+	background-color: #888; /* Adjust the color of the scrollbar thumb */
+	border-radius: 4px; /* Adjust the border radius for rounded corners */
+}
+
+/* For Safari */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555; /* Adjust the color of the scrollbar thumb on hover */
+}
+
+/* For Chrome and newer Edge */
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1; /* Adjust the color of the scrollbar track */
+}
+
+/* For Firefox (does not support customizing scrollbar styles) */
+/* You can add fallback styles for browsers that don't support custom scrollbar styles */
+/* This will not create the same thin and rounded scrollbar, but it will apply some styles to the scrollbar */
+/* Firefox and Internet Explorer/Edge will show default scrollbar styles */
+
+/* For Internet Explorer/Edge (does not support customizing scrollbar styles) */
+/* Internet Explorer/Edge will show default scrollbar styles */
