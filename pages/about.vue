@@ -3,27 +3,27 @@
 		<div class="pt-6 pb-8 space-y-23 md:space-y-5">
 			<page-title>About</page-title>
 		</div>
-		<div
+		  <div
 			class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"
 		>
 			<div
 				class="flex flex-col items-center xl:items-start pt-8 xl:sticky xl:top-12"
 			>
 				<nuxt-img
-					:src="story.content.body[0].profilePicture.filename"
-					:title="story.content.body[0].profilePicture.title"
-					:alt="story.content.body[0].profilePicture.alt"
+					:src="story.content.profilePicture.filename"
+					:title="story.content.profilePicture.title"
+					:alt="story.content.profilePicture.alt"
 					class="rounded-full h-48 w-48 object-cover xl:rounded-lg"
 				/>
 
 				<h3 class="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
-					{{ story.content.body[0].name }}
+					{{ story.content.name }}
 				</h3>
 				<div class="text-gray-500 dark:text-gray-400">
-					{{ story.content.body[0].title }}
+					{{ story.content.title }}
 				</div>
 				<div class="flex pt-6 space-x-3">
-					<!-- <pre>{{ story.content.body[0] }}</pre> -->
+			
 					<a title="ajaybullec@gmail.com" href="mailto:ajaybullec@gmail.com">
 						<Icon
 							size="40"
@@ -59,20 +59,22 @@
 			</div>
 			<div class="py-8 max-w-none xl:col-span-2">
 				<div
-					v-html="markdown().render(story.content.body[0].profileData)"
+					v-html="markdown().render(story.content.profileData)"
 					class="prose dark:prose-h1:text-white dark:prose-h2:text-white dark:prose-h3:text-white dark:prose-a:text-primary-400"
 				></div>
 				<div class="mt-14">
 					<p>
 						Last updated at
 						{{
-							useDateFormat(story.content.body[0].updated_at, 'MMM DD, YYYY')
+							useDateFormat(story.content.updatedAt, 'MMM DD, YYYY')
 								.value
 						}}
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> 
+
+	
 	</main>
 </template>
 
@@ -82,7 +84,7 @@ import markdown from 'markdown-it'
 const story = await useAsyncStoryblok('about', { version: 'draft' })
 
 useSeoMeta({
-	title: "About Me",
+	title: 'About Me',
 	description: 'About Me, This Website & Journey as a Developer',
 })
 </script>
