@@ -9,4 +9,9 @@
 import markdown from 'markdown-it'
 
 const story = await useAsyncStoryblok('uses', { version: 'draft' })
+
+useSeoMeta({
+	title: 'Uses',
+	description: 'Tools, editors, software i use ',
+})
 </script>

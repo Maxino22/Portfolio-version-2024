@@ -97,7 +97,8 @@ getProjects()
 const store = useProjectStore()
 
 useSeoMeta({
-	description: 'CSome Projects I have worked on',
+	title: 'Projects',
+	description: 'View some of my work',
 })
 </script>
 

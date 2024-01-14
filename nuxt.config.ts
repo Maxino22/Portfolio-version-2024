@@ -48,7 +48,7 @@ app: {
 },
 site:{
    url: "https://www.maxino.dev",
-   name: "Maxwell Muanda | Portfolio Website",
+   name: "Maxwell Muhanda | Portfolio Website",
    description: "Welcome to my Digital Home, Portfolio & Blog",
 },
 runtimeConfig: {
