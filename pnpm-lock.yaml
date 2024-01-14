@@ -55,6 +55,9 @@ devDependencies:
   nuxt:
     specifier: ^3.9.0
     version: 3.9.0(vite@5.0.10)
+  nuxt-gtag:
+    specifier: ^1.1.2
+    version: 1.1.2
   nuxt-icon:
     specifier: ^0.6.8
     version: 0.6.8(nuxt@3.9.0)(vite@5.0.10)(vue@3.4.3)
@@ -6437,6 +6440,17 @@ packages:
     resolution: {integrity: sha512-Brt1kbn6MxiYOo7B1B3Plz+NoMNLCPUzcQzcFOlSdxFFVtx5lqQoUvlQ/FlEuRZX0p7uKUiR3ItK7IeMRIqdAA==}
     engines: {node: '>=16'}
     dev: false
+
+  /nuxt-gtag@1.1.2:
+    resolution: {integrity: sha512-+gStu6D7RuKnYtmaeYlV+AYmqpNEk8sfv6XRL4hVMK0DSe1GnpPi3rVyx/R5WF8xe2xJl8/CTtgrE25CIOQsHQ==}
+    dependencies:
+      '@nuxt/kit': 3.9.0
+      defu: 6.1.3
+      pathe: 1.1.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /nuxt-icon@0.6.8(nuxt@3.9.0)(vite@5.0.10)(vue@3.4.3):
     resolution: {integrity: sha512-6eWlNOb6Uvp63uXFdhcmsB1JlubDv76Pot/VwmIu0yJxDYhwytbnv3WAjw2khl2l7W/65V4eMGIEeX9C5Ahxng==}

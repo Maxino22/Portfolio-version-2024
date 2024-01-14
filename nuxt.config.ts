@@ -11,6 +11,7 @@ export default defineNuxtConfig({
      '@nuxt/image',
      '@nuxtjs/color-mode',
      "@storyblok/nuxt",
+     'nuxt-gtag',
      ["nuxt-mail", {
       message: {
         to: "me@maxino.dev"
@@ -26,7 +27,10 @@ export default defineNuxtConfig({
 
      }]
 ],
+gtag:{
+  id: 'G-YEJ6WYZZ47'
 
+},
 app: {
   pageTransition: { name: 'fade', mode: 'out-in' },
   head: {
