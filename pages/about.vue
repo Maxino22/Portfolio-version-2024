@@ -24,7 +24,7 @@
 				</div>
 				<div class="flex pt-6 space-x-3">
 			
-					<a title="ajaybullec@gmail.com" href="mailto:ajaybullec@gmail.com">
+					<a title="me@maxino.dev" href="mailto:me@maxino.dev">
 						<Icon
 							size="40"
 							class="text-gray-800 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-300"

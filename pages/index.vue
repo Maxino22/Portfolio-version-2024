@@ -55,11 +55,11 @@ useSchemaOrg([
 useSeoMeta({
 	description: 'Portfolio Website, Digital Home & Blog',
 	ogUrl: `https://drunkenape.africa/`,
-	ogTitle: 'Maxwell Muhanda 🐱‍👤',
-	ogImage: '/images/maxino.png',
+	ogTitle: 'Maxwell Muhanda',
+	ogImage: '/favicon-32x32.png',
 	twitterCard: 'summary_large_image',
-	twitterTitle: 'Maxwell Muhanda 🐱‍👤',
-	twitterDescription: 'Portfolio Website, Digital Home & Blog',
-	twitterImage: '/images/maxino.png',
+	twitterTitle: 'Maxwell Muhanda',
+	twitterDescription: 'Portfolio Website, Digital Home & Blog. Software Developer based in Nairobi, Kenya',
+	twitterImage: '/favicon-32x32.png',
 })
 </script>

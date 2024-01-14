@@ -13,7 +13,7 @@ export default defineNuxtConfig({
      "@storyblok/nuxt",
      ["nuxt-mail", {
       message: {
-        to: process.env.MAIL_USER
+        to: "me@maxino.dev"
       },
        smtp: {
        host: process.env.MAIL_HOST,
